@@ -609,3 +609,31 @@ a {
   width: 24px;
   height: 20px;
 }
+.modal {
+max-width: 408px;
+height: 584px;
+border-radius: 4px;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+background-color: #fcfcfc;
+}
+.modal-overlay {
+  background-color: rgba(46, 47, 66, 0.4);
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+position: fixed;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+z-index: 999;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.form-input {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 4px;
+}
