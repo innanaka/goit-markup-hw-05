@@ -558,6 +558,7 @@
             </li>
           </ul>
         </div>
+        <form>
         <div class="mail-form">
             <label for="email" class="mail-label">
               Subscribe
@@ -572,28 +573,46 @@
             </button>
           </div>
         </div>
+        </form>
     </footer>
-    <div class="modal-overlay">
-    <div class="modal">
-    <form class="form" name="contact-form" autocomplete="off">
-      <fieldset>
-        <legend>Leave your contacts and we will call you back</legend>
-      </fieldset>
-      <label for="name" class="form-feedback">
-        Name
-        </label>
-        <input class="form-input" type="text" name="username" id="name" autofocus />
-    
-      <label for="phone" class="form-feedback">
-        Phone
-        <input class="form-input" type="tel" name="number" id="phone" />
-      </label>
-      <label class="form-feedback">
-        Comment
-        <textarea class="form-input" name="feedback" id="comment" placeholder="Text input"
-          rows="5"></textarea>
-      </label>
+     <!-- region popup -->
+      <div class="backdrop">
+      <div class="popup-review">
+        <button class="close-popup">
+          <svg class="close-btn" width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="text-popup">Leave your contacts and we will call you back</p>
+        <form>
+         <div class="field-wrapper">
+          <label class="label-field" for="user-name">Name</label>
+          <input class="input-field" type="text" id="user-name" name="user-name">
+        </div>
+         <div class="field-wrapper">
+          <label class="label-field" for="user-phone">Phone</label>
+          <input class="input-field" type="tel" id="user-phone" name="user-phone">
+        </div>
+         <div class="field-wrapper">
+          <label class="label-field" for="user-email">Email</label>
+          <input class="input-field" type="email" id="user-email" name="user-email">
+         </div>
+        <div class="field-wrapper">
+          <label class="label-field" for="">Comment</label>
+          <textarea class="comment-field" name="usr-comment" id="user-comment" placeholder="Text input"></textarea>
+          </div>
+          <div name="checkbox-field">
+            <input type="checkbox" id="user-terms" name="user-terms">
+            <lable for="user-terms" class="text-terms">
+              I accept the terms and conditions of the <a href="#" class="privacy-link">Privacy Policy</a>
+            </lable>
+          </div>
+          <button type="button">Send</button>
+        </form>
       </div>
-      </div>
+     </div>
+
+
+     <!-- endregion popup -->
   </body>
 </html>
