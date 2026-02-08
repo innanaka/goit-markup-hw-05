@@ -426,16 +426,17 @@
           <p class="mail-text">Subscribe</p>
           <label for="email" class="mail-label"></label>
           <div class="input-row">
-            <input class="input-email" type="email" id="email" placeholder="Email">
+            <input class="input-email" type="email" name="email" id="email" placeholder="Email">
             <button class="mail-button" type="submit">Subscribe
-              <svg width="24" height="20" class="icon-scr">
+              <svg width="24" height="24" class="icon-scr">
                 <use href="./images/icons.svg#icon-subscr">
                 </use>
               </svg>
             </button>
           </div>
-        </div>
-      </form>
+          </div>
+    </form>
+    </div>
   </footer>
   <!-- region popup -->
   <div class="backdrop" data-modal>
@@ -475,7 +476,7 @@
           </div>
         </div>
         <div class="field-wrapper">
-          <label class="label-field" for="">Comment</label>
+          <label class="label-field" for="user-comment">Comment</label>
           <textarea class="comment-field" name="usr-comment" id="user-comment" placeholder="Text input"></textarea>
         </div>
         <div>
@@ -489,7 +490,7 @@
             I accept the terms and conditions of the <a href="#" class="privacy-link">Privacy Policy</a>
           </label>
         </div>
-        <button class="botton-field" type="button">Send</button>
+        <button class="botton-field" type="submit">Send</button>
       </form>
     </div>
   </div>
