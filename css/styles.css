@@ -749,7 +749,7 @@ a {
 }
 
 .field-wrapper {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   padding-right: 24px;
   padding-left: 24px;
 }
@@ -815,6 +815,7 @@ a {
   padding: 8px 16px;
   resize: none;
   outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment-field::placeholder {
@@ -857,7 +858,7 @@ a {
 .text-terms {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.33333;
   letter-spacing: 0.04em;
   color: #8e8f99;
   border-radius: 4px;
