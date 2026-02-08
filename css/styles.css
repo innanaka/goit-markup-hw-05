@@ -557,6 +557,7 @@ a {
   display: flex;
   gap: 16px;
   margin-top: 16px;
+
 }
 
 .social-icon-footer {
@@ -581,6 +582,7 @@ a {
   display: flex;
   gap: 120px;
   align-items: baseline;
+  position: relative;
 }
 
 .mail-form {
@@ -589,7 +591,8 @@ a {
   flex-direction: column;
   max-width: 453px;
   max-height: 80px;
-  margin-left: auto; 
+  position: absolute;
+  right: 0;
 }
 
 .mail-text {
@@ -698,13 +701,13 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 72px 24px 24px 24px;
   transform: translate(-50%, -50%);
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   width: 408px;
   height: 80%;
-  min-height: 584px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -744,14 +747,12 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding: 72px 24px 16px 24px;
+  margin-bottom: 16px;
 
 }
 
 .field-wrapper {
-  margin-bottom: 16px;
-  padding-right: 24px;
-  padding-left: 24px;
+  margin-bottom: 8px;
 }
 
 .icon-inner {
@@ -826,17 +827,25 @@ a {
   color: rgba(46, 47, 66, 0.4);
 
 }
+.checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+ 
+} 
 
-.input-checkbox:checked + .text-terms .custom-checkbox {
+
+.input-checkbox:checked+.text-terms .custom-checkbox {
   background-color: #404bbf;
   fill: #f4f4fd;
 }
+
 .check-icon {
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-checkbox:checked + label .custom-checkbox .check-icon {
+.input-checkbox:checked+label .custom-checkbox .check-icon {
   opacity: 1;
 }
 
