@@ -707,7 +707,6 @@ a {
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   width: 408px;
-  height: 80%;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -827,13 +826,6 @@ a {
   color: rgba(46, 47, 66, 0.4);
 
 }
-.checkbox-wrapper {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
- 
-} 
-
 
 .input-checkbox:checked+.text-terms .custom-checkbox {
   background-color: #404bbf;
@@ -859,6 +851,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-right: 8px;
+  margin-left: -24px;
   fill: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
