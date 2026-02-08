@@ -589,6 +589,7 @@ a {
   flex-direction: column;
   max-width: 453px;
   max-height: 80px;
+  margin-left: auto; 
 }
 
 .mail-text {
@@ -748,7 +749,7 @@ a {
 }
 
 .field-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   padding-right: 24px;
   padding-left: 24px;
 }
@@ -825,7 +826,7 @@ a {
 
 }
 
-.input-checkbox:checked+.text-terms .custom-checkbox {
+.input-checkbox:checked + .text-terms .custom-checkbox {
   background-color: #404bbf;
   fill: #f4f4fd;
 }
@@ -834,8 +835,7 @@ a {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-checkbox:checked+.custom-checkbox .check-icon
- {
+.input-checkbox:checked + label .custom-checkbox .check-icon {
   opacity: 1;
 }
 
@@ -870,10 +870,6 @@ a {
   text-decoration: underline;
   color: #4d5ae5;
   line-height: 1.33333;
-}
-.privacy-link:hover,
-.privacy-link:focus {
-  text-decoration: none;
 }
 
 .botton-field {
