@@ -726,17 +726,26 @@ a {
   line-height: 0;
   width: 24px;
   height: 24px;
-  fill: #2E2F42;
+  
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-style: solid;
 
 }
+.close-btn {
+fill: #2E2F42;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-popup:hover>.close-btn,
+.close-popup:focus>.close-btn {
+  fill: #fff;
+}
+
 
 .close-popup:hover,
 .close-popup:focus {
   background-color: #404bbf;
-  fill: #fff;
 }
 
 .text-popup {
@@ -825,6 +834,9 @@ a {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 
+}
+.checkbox-wrapper {
+  padding-top: 8px;
 }
 
 .input-checkbox:checked+.text-terms .custom-checkbox {
